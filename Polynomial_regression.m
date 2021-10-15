@@ -3,12 +3,12 @@ function [t_w] = Polynomial_regression(x,t,M)
 %   t:      naměřenné vzorky
 %   M:      řád polynomu
 %   t_w:    aproximace  
+
 N = length(x);
 
 syms w [1,M+1];             % příprava koeficientů
 y_x = sym(zeros(1,N));      % příprava teoretických vzorků 
 
-    
 for i = 1:N                 % pro všechny prvky x (v každém čase) 
     for j = 0:M             % vypočítej sumu přes daný řád polynomu
         y_x(i) = y_x(i) + ((w(j+1))*(x(i)^j));  % podle rovnice (x^j*w_j)

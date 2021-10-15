@@ -11,7 +11,8 @@ hold on;
 plot(x,sin(x),'b')              % vykreslení původní funkce
 
 % for M = 1:9
-    t_w(i) = Polynomial_regression(x,t,M); % výpočet aproximace
+    t_w = Polynomial_regression(x,t,M); % výpočet aproximace
 % end
 
 plot(x,t_w,'r');                % vykreselní aproximace
+
