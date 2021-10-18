@@ -15,7 +15,7 @@ for j = 0:M
             Phi_T_x_Phi(i+1,j+1) = N;
             continue;
         else
-            Phi_T_x_Phi(i+1,j+1) = sum(x.^(i+j)); % sestavení matice (Phi'*Phi), kde phi_m = w_m*x^m  
+            Phi_T_x_Phi(i+1,j+1) = sum(x.^(i+j)); % sestavení matice  
         end
     end
     Phi_T_x_t(j+1,1) = sum((x.^(j)).*t); 

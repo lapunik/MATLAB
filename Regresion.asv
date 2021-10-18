@@ -1,6 +1,5 @@
 N = 20;                             % počet vzorků
 func = @(x) sin(x);                 % testovaná funkce
-
 x = 0:((2*pi)/(N-1)):2*pi;          % vzorkovací čas
 t = awgn(func(x),15);               % naměřená data
 
@@ -29,7 +28,7 @@ for i = 0:K
 end
 
 figure();
-plot(0:K,E_RMS,'b-o');      % vykreslení vývoje chyb aproximace na TRÉNINKOVÝCH datech vůči velikosti prokládajícího polynomu 
+plot(0:K,E_RMS,'b-o');      % vykreslení vývoje chyb aproximace na tréninkových datech vůči velikosti prokládajícího polynomu 
 hold on;                
-plot(0:K,E_RMS_c,'r-o');    % vykreslení vývoje chyb aproximace na TESTOVACÍCH datech vůči velikosti prokládajícího polynomu
+plot(0:K,E_RMS_c,'r-o');   
 
