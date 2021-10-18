@@ -16,7 +16,7 @@ Phi_T_x_t = zeros(1,M+1);       % matice (Phi'*t), kde t je vektor výstupů
 for j = 0:M
     for i = 0:M
         if(i == 0 && j == 0)
-            Phi_T_x_Phi(i+1,j+1) = N+lambda;
+            Phi_T_x_Phi(i+1,j+1) = N; % + lambda; co jsem tak pochopil, tak sem není vhodný dávat + lambda
             continue;
         else    
             Phi_T_x_Phi(i+1,j+1) = sum(x.^(i+j)); % sestavení matice (Phi'*Phi), kde phi_m = w_m*x^m  
