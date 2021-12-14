@@ -71,9 +71,7 @@ Structure:
 --- Deep learning methods (folder)
 
         |--- Linear_equations
-
         |
-
         |--- Polynomial_evaluetion
 
         |
