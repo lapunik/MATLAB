@@ -16,20 +16,51 @@ Linear_equations
 který sloužil pouze pro zopakování si práce s maticemi v MATLABu. 
 
 ```
-Regression
+Regression_analytically
 ```
 
-který obsahuje hlavní skript kódu. Z tohoto skriptu jsou volány dále popisované funkce. Skrip je interaktivní a dovoluje hrát si s řádem polynomu resp. s hodnotou regularizačního členu a přímo sledovat tuto změnu na vykreslených grafech.
+který obsahuje hlavní skript kódu k analitické aproximaci. Z tohoto skriptu jsou volány dále popisované funkce. Skript je interaktivní a dovoluje hrát si s řádem polynomu resp. s hodnotou regularizačního členu a přímo sledovat tuto změnu na vykreslených grafech.
 
 
 ```
-Polynomial_regression
+Polynomial_regression_analytically
 ```
 
-tato funkce zajišťuje nejdůležitější část kódu, a sice samotný výpočet aproximace. Celý postup je ve funkci podrobně vysvětlen.
+tato funkce zajišťuje nejdůležitější část kódu, a sice samotný výpočet aproximace analytickou metodou. Celý postup je ve funkci podrobně vysvětlen. 
 
 ```
 Polynomial_evaluation
 ```
 
-poslední funkce v podstatě jen nahrazuje klasický polyval. Prostě spočítá podle určité aproximace výstupní body. 
+tato funkce v podstatě jen substituuje klasický polyval. Prostě spočítá podle určité aproximace výstupní body. 
+
+```
+Least_squares_method
+```
+
+Metoda pro výpočet nejmenších čtverců. Vstpní parametry jsou dva vektory, mezi kterými se kvadratické odchylky na druhou počítají. 
+
+```
+Regression_gradient_method
+```
+
+který obsahuje hlavní skript kódu k aproximaci pomocí gradientních metod. Z tohoto skriptu jsou volány dále popisované funkce. Skript je interaktivní a dovoluje hrát si s řádem polynomu resp. s hodnotou regularizačního členu a přímo sledovat tuto změnu na vykreslených grafech.
+
+```
+Batch_gradient_decent
+```
+
+tato funkce zajišťuje výpočet aprroximace gradientní metodou. Přesněji metodou konvugovaných gradientů.
+
+```
+Batch_gradient_decent_symbolic
+```
+
+tato funkce zajišťuje výpočet aprroximace gradientní metodou. Jedná se o čistou metodu největšího spádu. Jsou zde využity symbolické proměnné pro práci s gradientem.
+
+```
+BGD_detail
+```
+
+tento skript demonstruje výpočet aprroximace gradientní metodou. Je velmi detailně popsaný na příkladech optimalizace na základě jendoho parametru, následně dvou parametrů a nakonec M parametrů. Jedná se o čistou metodu největšího spádu. Jsou zde využity symbolické proměnné pro práci s gradientem. Až si budu chtít osvěžit znalosti gradientních metod, tohle je určitě lepší volba, než funkce "Batch_gradient_decent_symbolic" nebo "Batch_gradient_decent".
+
