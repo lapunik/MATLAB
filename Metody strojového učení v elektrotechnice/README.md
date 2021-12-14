@@ -68,24 +68,24 @@ tento skript demonstruje výpočet aprroximace gradientní metodou. Je velmi det
 
 Structure:
 
---- Deep learning methods (folder)
-        |--- Linear_equations
-        |
-        |--- Polynomial_evaluetion
-        |
-        |--- Last_squares_method
-        |
-        |--- Regression_analytically
-        |       |
-        |       |--- Polynomial_regression_analytically
-        |
-        |--- Regression_gradient_method
-        |       |
-        |       |--- Batch_gradient_decent 
-        |
-        |--- Batch_gradient_decent_symbolic
-        |--- BGD_detail
-        |--- BDG_moment
+        --- Deep learning methods (folder)
+                |--- Linear_equations
+                |
+                |--- Polynomial_evaluetion
+                |
+                |--- Last_squares_method
+                |
+                |--- Regression_analytically
+                |       |
+                |       |--- Polynomial_regression_analytically
+                |
+                |--- Regression_gradient_method
+                |       |
+                |       |--- Batch_gradient_decent 
+                |
+                |--- Batch_gradient_decent_symbolic
+                |--- BGD_detail
+                |--- BDG_moment
         
         
         
