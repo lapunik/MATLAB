@@ -64,3 +64,29 @@ BGD_detail
 
 tento skript demonstruje výpočet aprroximace gradientní metodou. Je velmi detailně popsaný na příkladech optimalizace na základě jendoho parametru, následně dvou parametrů a nakonec M parametrů. Jedná se o čistou metodu největšího spádu. Jsou zde využity symbolické proměnné pro práci s gradientem. Až si budu chtít osvěžit znalosti gradientních metod, tohle je určitě lepší volba, než funkce "Batch_gradient_decent_symbolic" nebo "Batch_gradient_decent".
 
+
+
+Structure:
+
+--- Deep learning methods (folder)
+        |--- Linear_equations
+        |
+        |--- Polynomial_evaluetion
+        |
+        |--- Last_squares_method
+        |
+        |--- Regression_analytically
+        |       |
+        |       |--- Polynomial_regression_analytically
+        |
+        |--- Regression_gradient_method
+        |       |
+        |       |--- Batch_gradient_decent 
+        |
+        |--- Batch_gradient_decent_symbolic
+        |--- BGD_detail
+        |--- BDG_moment
+        
+        
+
+
