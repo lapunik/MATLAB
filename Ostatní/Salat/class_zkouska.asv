@@ -1,0 +1,23 @@
+classdef class_zkouska
+    %CLASS_ZKOUSKA Summary of this class goes here
+    %   Detailed explanation goes here
+    
+    properties
+       a
+       b
+       vysledek
+    end
+    
+    methods (Access = public)
+        function obj = class_zkouska(aa,bb)
+
+            obj.a = aa;
+            obj.b = bb;
+        end
+        
+        function inkrement(obj,)
+            outputArg = obj.Property1 + inputArg;
+        end
+    end
+end
+

@@ -1,0 +1,27 @@
+classdef Hrac
+    
+    properties
+        recept
+        ingredience
+    end
+    
+    methods
+        function obj = Hrac()
+            obj.recept = [];
+            obj.ingredience = [];
+        end
+        
+        function Nakup(obj, balicek,karta)
+        obj.ingredience(end+1) = balicek.Nakup(karta);
+        end
+    end
+    
+    methods(Static)
+        function hraci = Vytvor_hrace(pocet_hracu)
+            for i = 1:pocet_hracu
+                hraci(i) = Hrac();
+            end 
+        end
+    end
+end
+
